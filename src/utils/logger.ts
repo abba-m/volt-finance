@@ -1,5 +1,5 @@
-import Pino, { LoggerOptions } from "pino";
-import Pretty from "pino-pretty";
+import Pino, { LoggerOptions } from 'pino';
+import Pretty from 'pino-pretty';
 
 const options: LoggerOptions = {
   timestamp: Pino.stdTimeFunctions.isoTime,

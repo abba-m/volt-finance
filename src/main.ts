@@ -1,8 +1,9 @@
 import express, { Request, Response } from 'express';
 import { createLogger } from './utils/logger';
 
-const logger = createLogger("App");
-const app = express();
+const logger = createLogger("App")
+
+const app = express()
 const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
@@ -10,5 +11,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  logger.info(`Server listening on port "${port}"`);
+  logger.info(`Server listening on port ${port}`);
 });

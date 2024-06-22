@@ -1,13 +1,6 @@
 {
-  "watch": [
-    "src"
-  ],
-  "ignore": [
-    "test/**/*.ts",
-    "test/**/*.spec.ts",
-    ".git",
-    "node_modules"
-  ],
+  "watch": ["src"],
+  "ignore": ["test/**/*.ts", "test/**/*.spec.ts", ".git", "node_modules"],
   "exec": "ts-node -r dotenv/config ./src/main.ts",
   "ext": "ts,js,json,yaml,yml"
 }
